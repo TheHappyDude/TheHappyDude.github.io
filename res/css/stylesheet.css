@@ -13,6 +13,11 @@
     align-items: center;
 }
 
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
 .navbar-spacer {
     height: 50px;
 }
@@ -21,9 +26,18 @@
     background-color: #202020;
     color: #e9e9e9;
     padding: 5% 10% 5% 10%;
+    width: 70%;
+    margin: 10px auto;
 }
 .panel-light {
     background-color: #e9e9e9;
     color: #202020;
     padding: 5% 10% 5% 10%;
+    width: 70%;
+    margin: 10px auto;
+}
+
+
+#carousel {
+    height: 100px;
 }
