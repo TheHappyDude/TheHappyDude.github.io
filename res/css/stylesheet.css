@@ -1,10 +1,18 @@
+.footer {
+    background-color: #212529;
+}
+
+.icon {
+    padding: 0px 25px;
+}
+
 .jumbotron {
     background: url("../images/water.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
     width: 100%;
-    padding: 10% 0%;
+    padding: 7% 0%;
 }
 
 .jumbotron img {
@@ -22,8 +30,12 @@
     height: 50px;
 }
 
+.nav-item {
+    padding: 0px 10px;
+}
+
 .panel-dark {
-    background-color: #202020;
+    background-color: #212529;
     color: #e9e9e9;
     padding: 5% 10% 5% 10%;
     width: 70%;
@@ -31,7 +43,7 @@
 }
 .panel-light {
     background-color: #e9e9e9;
-    color: #202020;
+    color: #212529;
     padding: 5% 10% 5% 10%;
     width: 70%;
     margin: 10px auto;
@@ -40,4 +52,8 @@
 
 #carousel {
     height: 100px;
+}
+
+#name-highlight {
+    color: #00254c;
 }
