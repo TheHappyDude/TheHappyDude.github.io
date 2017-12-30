@@ -13,7 +13,7 @@
   <title>Kaiwen Wang</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">Kaiwen Wang</a>
@@ -61,13 +61,56 @@
   </div>
   
   <div class="container-fluid">
-    <div class="panel-light">
+    <div class="panel-light" id="projects">
       <a name="projects"></a>
       <h1>Projects</h1>
-      <p>Test light panel</p>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="res/images/projects/windowseat.jpg" alt="Window Seat">
+            <div class="card-block">
+              <h4 class="card-title">Window Seat</h4>
+              <p class="card-text">VR application that simulates sitting in an airplane window seat</p>
+              <a href="#" class="btn btn-primary">More Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="#" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Sandvine Dashboard</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">More Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="#" alt="Image">
+            <div class="card-block">
+              <h4 class="card-title">HKeInvest</h4>
+              <p class="card-text">ASP web application</p>
+              <a href="#" class="btn btn-primary">More Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="#" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Shopping With Friends</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">More Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="panel-dark">
+    <div class="panel-dark" id="technologies">
       <a name="technologies"></a>
       <h1>Familiar Technologies</h1>
       <div class="carousel">
@@ -83,7 +126,7 @@
       </div>
     </div>
 
-    <div class="panel-light">
+    <div class="panel-light" id="contact">
       <a name="contact"></a>
       <h1>Contact</h1>
       <p>Github: <a href="https://github.com/TheHappyDude">https://github.com/TheHappyDude</a></p>
