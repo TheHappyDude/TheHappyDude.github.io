@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $(".carousel").slick({
         dots: false,
         infinite: true,
@@ -8,5 +8,9 @@ $(document).ready(function() {
         slidesToShow: 4,
         slidesToScroll: 1
     });
-    
-  });
+
+});
+
+$('.more-info').click(function () {
+    $("#card1").toggleClass('flip');
+});
