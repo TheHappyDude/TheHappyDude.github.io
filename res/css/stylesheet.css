@@ -38,56 +38,35 @@ h6 {
     color: #999999;
 }
 
-ul {
-    list-style:none;
-    padding-left:0;
-}​
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
 
 /*Classes*/
+.card-deck .card {
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
 .card .card-btn {
-    border-radius: 0px;
-    border-color: #999999;
     width: 90%;
+    margin-bottom: 10px;
+    border: 2px solid #e9e9e9;
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
 }
 
-.card {
-    z-index: 1;
-    width:100%;
-    perspective: 600px;
-    position: relative;
+.card .card-btn:hover {
+    background-color: #e9e9e9;
 }
 
-.card .card-front, .card .card-back {
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    position: absolute;
-    transition:.5s ease-in-out;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #ffffff;
-    border-radius: 10px;
+.card .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-
-.card .card-front {
-    transform: rotateY(0deg);
-    overflow: hidden;
-    z-index: 1;
-}
-
-.card .card-back {
-    transform: rotateY(180deg);
-    display: table;
-    z-index: 2;
-}
-
-.card.flip .card-front {
-    transform: rotateY(180deg);
-}
-
-.card.flip .card-back {
-    transform: rotateY(360deg);
-}
-  
 
 .footer {
     background-color: #212529;

@@ -1,5 +1,3 @@
 Refine footer
-CSS hyperlinks, headers
-Fix cards
-Figure out widths, panel margins
-Center card button
+Fix hyperlink CSS in contact section
+Add description functionality to cards
