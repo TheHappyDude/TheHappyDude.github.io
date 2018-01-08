@@ -45,6 +45,7 @@ ul{
 
 /*Classes*/
 .card-deck .card {
+    min-width: 200px;
     max-width: 250px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
@@ -75,6 +76,22 @@ ul{
 
 .icon {
     padding: 0px 25px;
+}
+
+.icon a:link {
+    color: #212529;
+}
+
+.icon a:hover {
+    color: #999999;
+}
+
+.icon a:visited {
+    color: #212529;
+}
+
+.icon a:active {
+    color: #212529;
 }
 
 .jumbotron {
