@@ -1,3 +1,3 @@
-# PersonalSite
+# Personal Site
 
-Link: https://thehappydude.github.io/PersonalSite/
+Link: https://thehappydude.github.io/
