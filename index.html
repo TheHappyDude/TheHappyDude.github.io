@@ -1,143 +1,436 @@
 <!DOCTYPE HTML>
 <html>
 
-<head>
-  <link rel="stylesheet" type="text/css" href="vend/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="vend/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="vend/slick/slick-theme.css" />
-  <script type="text/javascript" src="vend/fontawesome-all.min.js"></script>
+    <head>
+        <script type="text/javascript" src="vend/foundation-6.4.2-complete/js/vendor/jquery.js"></script>
+        <script type="text/javascript" src="vend/foundation-6.4.2-complete/js/vendor/foundation.min.js"></script>
+        <script type="text/javascript" src="vend/fontawesome-all.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="res/css/stylesheet.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" type="text/css" href="vend/foundation-6.4.2-complete/css/foundation.min.css" />
+        <link rel="stylesheet" type="text/css" href="res/css/stylesheet2.css" />
 
-  <meta charset="utf-8" />
-  <meta name="theme-color" content="#212529"/>
-  <title>Kaiwen Wang</title>
-</head>
+        <meta charset="utf-8" />
+        <title>Kaiwen Wang</title>
+    </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Kaiwen Wang</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-      aria-expanded="false" aria-label="Toggle Navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#technologies">Familiar Technologies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="navbar-spacer"></div>
-
-  <div class="jumbotron text-center">
-    <h5>Hi I'm</h5>
-    <h1 id="name-highlight">Kaiwen</h1>
-    <i>
-      Georgia Institute of Technology</br>
-      B.S. Computer Science, 2018</br>
-      Modeling and Simulation, Systems and Architecture</br>
-    </i>
-    </br>
-    <h1 class="icon">
-      <span class="icon"><a href="https://drive.google.com/uc?export=download&id=12kyWa55BiAbMHV_z8B-q4d1rhLWem767"><i class="fas fa-file-alt fa-lg"></i></a></span>
-      <span class="icon"><a href="https://www.linkedin.com/in/kaiwen-wang-440187b0/"><i class="fab fa-linkedin fa-lg"></i></a></span>
-      <span class="icon"><a href="https://github.com/TheHappyDude"><i class="fab fa-github-square fa-lg"></i></a></span>
-    </h1>
-  </div>
-
-  <div class="container-fluid">
-    <div class="panel-light" id="projects">
-      <a name="projects"></a>
-      <h1>Projects</h1>
-        <div class="card-deck">
-          <div class="card text-center">
-            <img class="card-img-top" src="res/images/projects/windowseat.jpg" alt="Window Seat">
-            <h4 class="card-title">Window Seat</h4>
-            <p class="card-text">Mobile VR Application</p>
-            <a href="javascript:void(0)" class="more-info"><button class="card-btn">More Details</button></a>
-          </div>
-          <div class="card text-center">
-            <img class="card-img-top" src="res/images/projects/shoppingwithfriends.jpg" alt="Shopping With Friends">
-            <h4 class="card-title">Shopping With Friends</h4>
-            <p class="card-text">Android Application</p>
-            <a href="javascript:void(0)" class="more-info"><button class="card-btn">More Details</button></a>
-          </div>
+    <body data-spy="scroll" data-target=".top-bar">
+        <div class="top-bar">
+            <ul class="dropdown menu">
+                <li class="menu-text dark">Kaiwen Wang</li>
+                <li class="dark"><a href="#technologies">Familiar Technologies</a></li>
+                <li class="dark"><a href="#projects">Projects</a></li>
+                <li class="dark"><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </div>
 
+        <div class="spacer"></div>
 
-    <div class="panel-dark" id="technologies">
-      <a name="technologies"></a>
-      <h1>Familiar Technologies</h1>
-      <div class="carousel">
-        <div><a href="https://developer.android.com/studio/index.html"><img src="res/images/logos/androidstudio.png" class="logo" alt="Android Studio"></a></div>
-        <div><a href="https://git-scm.com/"><img src="res/images/logos/git.png" class="logo" alt="Git"></a></div>
-        <div><a href="https://en.wikipedia.org/wiki/HTML5"><img src="res/images/logos/html.png" class="logo" alt="HTML"></a></div>
-        <div><a href="https://www.jetbrains.com/idea/"><img src="res/images/logos/intellij.png" class="logo" alt="Intellij"></a></div>
-        <div><a href="https://java.com/en/"><img src="res/images/logos/java.png" class="logo" alt="Java"></a></div>
-        <div><a href="https://www.javascript.com/"><img src="res/images/logos/js.png" class="logo" alt="JavaScript"></a></div>
-        <div><a href="https://www.mongodb.com/"><img src="res/images/logos/mongo.png" class="logo" alt="MongoDB"></a></div>
-        <div><a href="https://www.python.org/"><img src="res/images/logos/python.png" class="logo" alt="Python"></a></div>
-        <div><a href="https://www.altera.com/products/design-software/fpga-design/quartus-prime/overview.html"><img src="res/images/logos/quartus.png" class="logo" alt="Quartus"></a></div>
-        <div><a href="https://code.visualstudio.com/"><img src="res/images/logos/vscode.png" class="logo" alt="VSCode"></a></div>
-      </div>
-    </div>
-
-    <div class="panel-light" id="contact">
-      <a name="contact"></a>
-      <h1>Contact</h1>
-      <p>Github: <a href="https://github.com/TheHappyDude">https://github.com/TheHappyDude</a></p>
-      <p>Email: <a href="mailto:kwang329@gatech.edu">kwang329@gatech.edu</a></p>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6">
-          <h6>Kaiwen Wang</h6>
-          <ul>
-            <li><a href="https://github.com/TheHappyDude">Github</li>
-            <li><a href="mailto:kwang329@gatech.edu">Email</a></li>
-          </ul>
+        <div class="callout large" id="jumbotron">
+            <div class="row column text-center">
+                <h1>Kaiwen Wang</h1>
+                <div class="grid-x grid-margin-x">
+                    <div class="medium-3 medium-offset-3 cell">
+                        <p class="lead">Georgia Institute of Technology</p>
+                        <p class="lead">B.S. Computer Science, 2018</p>
+                        <p class="lead">Modeling and Simulations, Systems and Architecture</p>
+                    </div>
+                    <div class="medium-3 cell">
+                        <p class="lead">Georgia Institute of Technology</p>
+                        <p class="lead">M.S. Computer Science, 2019</p>
+                        <p class="lead">Machine Learning</p>
+                    </div>
+                </div>
+                <a href="#" class="button large">Resume</a>
+                <a href="#" class="button large">Linkedin</a>
+                <a href="#" class="button large">Github</a>
+                <p></p>
+                <h1>
+                <span class="icon"><a href="#"><i class="fas fa-file-alt fa-lg"></i></a></span>
+                <span class="icon"><a href="https://www.linkedin.com/in/kaiwen-wang-440187b0/"><i class="fab fa-linkedin fa-lg"></i></a></span>
+                <span class="icon"><a href="https://github.com/TheHappyDude"><i class="fab fa-github-square fa-lg"></i></a></span>
+                </h1>
+            </div>
         </div>
-        <div class="col-sm-6">
-          <h6>Links</h6>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#technologies">Familiar Technologies</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div id="credit">
-        <span class="text-muted">Website Built by Me!</span>
-      </div>
-    </div>
-  </footer>
 
-  <script type="text/javascript" src="vend/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="vend/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="vend/slick/slick.min.js"></script>
-  <script type="text/javascript" src="res/scripts/scripts.js"></script>
-</body>
+        <article class="grid-container">
+            <div class="spacer"></div>
+            <div id="intro">
+                <div class="row column">
+                    <h3>Hi my name is Kaiwen!</h3>
+                    <p>I'm a graduate student at Georgia Tech specializing in machine learning. </p>
+                </div>
+
+                <div class="row column">
+                    <h4 class="text-center">Quick Stats</h4>
+                    <ul class="vertical medium-horizontal menu expanded text-center">
+                        <li><div class="stat">4</div><span>Internships</span></li>
+                        <li><div class="stat">12</div><span>Languages Used</span></li>
+                        <li><div class="stat">5</div><span>Hackathons</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="technologies">
+                <div class="spacer"></div>
+                <h3>Familiar Technologies</h3>
+                <div class="grid-x grid-margin-x">
+                    <div class="medium-4 cell">
+                        <h4>Languages</h4>
+                        <ul class="bullet">
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>LaTeX</li>
+                            <li>MATLab</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>Hadoop</li>
+                            <li>Spark</li>
+                            <li>VHDL</li>
+                        </ul>
+                    </div>
+                    <div class="medium-4 cell">
+                        <h4>Programs</h4>
+                        <ul class="bullet">
+                            <li>Microsoft Office</li>
+                            <li>OpenRefine</li>
+                            <li>AWS EC2</li>
+                            <li>Microsoft Azure</li>
+                            <li>Tableau</li>
+                            <li>Gephi</li>
+                            <li>Git</li>
+                            <li>Linux</li>
+                            <li>Anaconda</li>
+                            <li>Autodesk Inventor</li>
+                            <li>Adobe Photoshop</li>
+                        </ul>
+                    </div>
+                    <div class="medium-4 cell">
+                        <h4>Frameworks</h4>
+                        <ul class="bullet">
+                            <li>Django</li>
+                            <li>Pandas</li>
+                            <li>Scikit-Learn</li>
+                            <li>NumPy</li>
+                            <li>Plot.ly</li>
+                            <li>D3</li>
+                            <li>MPI</li>
+                            <li>Nginx</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="projects">
+                <div class="spacer"></div>
+                <h3>Selected Projects</h3>
+                <div class="grid-container">
+                    <div class="cell">
+                        <div class="card-info other">
+                            <div class="card-info-label">
+                                <div class="card-info-label-text">Other</div>
+                            </div>
+                            <div class="grid-x grid-margin-x card-info-content">
+                                <div class="medium-3 cell">
+                                    <img src="res/images/projects/movie.jpg" />
+                                </div>
+                                <div class="medium-9 cell">
+                                    <p class="lead">Box Office Revenue Predictor</p>
+                                    <ul class="bullet">
+                                        <li>Predict movie revenue based on a number of factors, 
+                                            including past movies, genre, actors, and critic rating
+                                        </li>
+                                        <li>Used machine learning to build models off multiple data sources</li>
+                                        <li>Created intuitive visualizations to display data and predictions</li>
+                                    </ul>
+                                    <div>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">D3</span>
+                                        <span class="tech-tag">Plot.ly</span>
+                                        <span class="tech-tag">Sci-kit</span>
+                                        <span class="tech-tag">OpenRefine</span>
+                                        <span class="tech-tag">Gephi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card-info app">
+                            <div class="card-info-label">
+                                <div class="card-info-label-text">App</div>
+                            </div>
+                            <div class="grid-x grid-margin-x card-info-content">
+                                <div class="medium-3 cell">
+                                    <img src="https://placehold.it/400x370&text=Pegasi B" />
+                                </div>
+                                <div class="medium-9 cell">
+                                    <p class="lead">Youtube Playback Monitor</p>
+                                    <ul class="bullet">
+                                        <li>Android application to measure network statistics
+                                            and end-user Quality-of-Experience (QoE) of YouTube playback
+                                        </li>
+                                        <li>Data used to cross-validate internal metrics to improve
+                                            bandwidth distribution on networks
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        <span class="tech-tag">Android</span>
+                                        <span class="tech-tag">Java</span>
+                                        <span class="tech-tag">PHP</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card-info other">
+                            <div class="card-info-label">
+                                <div class="card-info-label-text">Other</div>
+                            </div>
+                            <div class="grid-x grid-margin-x card-info-content">
+                                <div class="medium-3 cell">
+                                    <img src="res/images/projects/audio.png" />
+                                </div>
+                                <div class="medium-9 cell">
+                                    <p class="lead">Audio Transcription</p>
+                                    <ul class="bullet">
+                                        <li>Python notebook to try and recognize musical notes based
+                                            off audio files
+                                        </li>
+                                        <li>Used signal processing to recognize monotonic notes 
+                                            with reasonable accuracy, and to some degree simple polyphony</li>
+                                        <li>Entry for the 2018 Get A Move On Hackathon</li>
+                                    </ul>
+                                    <div>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Anaconda</span>
+                                        <span class="tech-tag">DSP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card-info web">
+                            <div class="card-info-label">
+                                <div class="card-info-label-text">Web</div>
+                            </div>
+                            <div class="grid-x grid-margin-x card-info-content">
+                                <div class="medium-3 cell">
+                                    <img src="https://placehold.it/400x370&text=Pegasi B" />
+                                </div>
+                                <div class="medium-9 cell">
+                                    <p class="lead">Sandvine Dashboard</p>
+                                    <ul class="bullet">
+                                        <li>Full-stack dashboard to monitor aggregate web traffic data through
+                                            network gateways, and monitor for anomalies
+                                        </li>
+                                        <li>Consisted of data retrieval, cleaning, and analysis, followed
+                                            by visualizations and cluster analysis
+                                        </li>
+                                        <li>Designed for robustness, flexibility, and speed, due to multivariate
+                                            and very large data sets, subject to change often in the future
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">pandas</span>
+                                        <span class="tech-tag">Sci-kit</span>
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">D3</span>
+                                        <span class="tech-tag">Plot.ly</span>
+                                        <span class="tech-tag">Nginx</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card-info other">
+                            <div class="card-info-label">
+                                <div class="card-info-label-text">Other</div>
+                            </div>
+                            <div class="grid-x grid-margin-x card-info-content">
+                                <div class="medium-3 cell">
+                                    <img src="res/images/projects/windowseat.jpg" />
+                                </div>
+                                <div class="medium-9 cell">
+                                    <p class="lead">Window Seat</p>
+                                    <ul class="bullet">
+                                        <li>Virtual Reality application designed for all smartphones to 
+                                            be used on flights as alternative entertainment
+                                        </li>
+                                        <li>Takes flight data and projects a virtual window seat, allowing 
+                                            interactivity with points of interest outside the plane
+                                        </li>
+                                        <li>Entry for HackGT 2018 Delta Airlines Hack</li>
+                                    </ul>
+                                    <div>
+                                        <span class="tech-tag">VR</span>
+                                        <span class="tech-tag">Unity</span>
+                                        <span class="tech-tag">C#</span>
+                                        <span class="tech-tag">Maya</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card-info web">
+                            <div class="card-info-label">
+                                <div class="card-info-label-text">Web</div>
+                            </div>
+                            <div class="grid-x grid-margin-x card-info-content">
+                                <div class="medium-3 cell">
+                                    <img src="res/images/projects/activelearning.jpg" />
+                                </div>
+                                <div class="medium-9 cell">
+                                    <p class="lead">ActiveLearning</p>
+                                    <ul class="bullet">
+                                        <li>Cross-platform web application that allows instructors to 
+                                            pose questions on a board and allow students to answer in real-time
+                                        </li>
+                                        <li>Implemented review and quiz features that can be enabled by 
+                                            a professor for students to use
+                                        </li>
+                                        <li>Worked with client to deliver and test-deploy application</li>
+                                    </ul>
+                                    <div>
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">JS</span>
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">Node</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card-info app">
+                            <div class="card-info-label">
+                                <div class="card-info-label-text">App</div>
+                            </div>
+                            <div class="grid-x grid-margin-x card-info-content">
+                                <div class="medium-3 cell">
+                                    <img src="res/images/projects/shoppingwithfriends.jpg" />
+                                </div>
+                                <div class="medium-9 cell">
+                                    <p class="lead">Shopping With Friends</p>
+                                    <ul class="bullet">
+                                        <li>Android application that allows users to add and share 
+                                            deals and discounts with each other
+                                        </li>
+                                        <li>Used geolocation to enhance user experience</li>
+                                        <li>Designed using full UML development tools in an Agile environment</li>
+                                    </ul>
+                                    <div>
+                                        <span class="tech-tag">Android</span>
+                                        <span class="tech-tag">Java</span>
+                                        <span class="tech-tag">XML</span>
+                                        <span class="tech-tag">UML</span>
+                                        <span class="tech-tag">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card-info other">
+                            <div class="card-info-label">
+                                <div class="card-info-label-text">Other</div>
+                            </div>
+                            <div class="grid-x grid-margin-x card-info-content">
+                                <div class="medium-3 cell">
+                                    <img src="res/images/projects/quartus.png" />
+                                </div>
+                                <div class="medium-9 cell">
+                                    <p class="lead">LC-3220 Processor</p>
+                                    <ul class="bullet">
+                                        <li>5-stage pipelined processor design based off a given ISA for 
+                                            an Altera FPGA</li>
+                                        <li>Implemented speedup features such as data forwarding and 
+                                            two-bit branch prediction</li>
+                                        <li>Written in VHDL using Quartus software</li>
+                                    </ul>
+                                    <div>
+                                        <span class="tech-tag">VHDL</span>
+                                        <span class="tech-tag">FPGA</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card-info web">
+                            <div class="card-info-label">
+                                <div class="card-info-label-text">Web</div>
+                            </div>
+                            <div class="grid-x grid-margin-x card-info-content">
+                                <div class="medium-3 cell">
+                                    <img src="res/images/projects/hkust.jpg" />
+                                </div>
+                                <div class="medium-9 cell">
+                                    <p class="lead">HKeInvest</p>
+                                    <ul class="bullet">
+                                        <li>ASP.NET application built for a mock investment company</li>
+                                        <li>Allowed users to apply for and exchange on a virtual stock market</li>
+                                    </ul>
+                                    <div>
+                                        <span class="tech-tag">ASP.NET</span>
+                                        <span class="tech-tag">C#</span>
+                                        <span class="tech-tag">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card-info web">
+                            <div class="card-info-label">
+                                <div class="card-info-label-text">Web</div>
+                            </div>
+                            <div class="grid-x grid-margin-x card-info-content">
+                                <div class="medium-3 cell">
+                                    <img src="res/images/projects/nih.png" />
+                                </div>
+                                <div class="medium-9 cell">
+                                    <p class="lead">QueueManager Dashboard</p>
+                                    <ul class="bullet">
+                                        <li>Full stack web control panel that controls all incoming requests to
+                                            major library servers
+                                        </li>
+                                        <li>Built from scratch to replace older panel, using updated technologies
+                                            such as AJAX and JQuery
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">Javascript</span>
+                                        <span class="tech-tag">JQuery</span>
+                                        <span class="tech-tag">C++</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="contact">
+                <div class="spacer"></div>
+                <h3>Contact</h3>
+
+            </div>
+
+        </article>
+    </body>
 
 </html>
