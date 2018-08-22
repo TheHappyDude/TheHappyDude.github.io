@@ -137,6 +137,10 @@ body {
     z-index: 999;
 }
 
+.top-bar ul {
+    background-color: #212529;
+}
+
 /* IDs */
 
 #jumbotron {
