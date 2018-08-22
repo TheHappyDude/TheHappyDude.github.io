@@ -1,5 +1,5 @@
 /* Global */
-/* 
+/*
 a:link {
     color: #999999;
     text-decoration: none;
@@ -22,6 +22,10 @@ a:active {
 
 body {
     font-family: "Roboto", sans-serif;
+}
+
+img {
+    vertical-align: "middle"
 }
 
 /* Classes */
@@ -50,11 +54,11 @@ body {
         -ms-transform: rotate(360deg);
             transform: rotate(360deg);
 }
-  
+
 .card-info .card-info-content {
     padding: 0.5rem 1.5rem 0.875rem;
 }
-  
+
 .card-info .card-info-label-text {
     color: #fefefe;
     font-size: 0.75rem;
